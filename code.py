@@ -2,7 +2,7 @@
 
 # Created by: Kyanh Pham
 # Created on: Oct 2022
-# This program is the "Space Aliens" program on the PyBadge
+# This program is the "Space Aliens" program on the PyBadge.
 
 import stage
 import ugame
