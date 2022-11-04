@@ -55,7 +55,6 @@ def game_scene():
         if keys & ugame.K_DOWN:
             pass
 
-
         game.render_sprites([ship])
         game.tick()
 
