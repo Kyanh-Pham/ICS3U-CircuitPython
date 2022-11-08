@@ -91,6 +91,7 @@ def game_scene():
             pass
 
         if a_button == constants.button_state["button_just_pressed"]:
+            sound.play(pew_sound)
 
         game.render_sprites([ship] + [alien])
         game.tick()
