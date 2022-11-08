@@ -22,7 +22,7 @@ def game_scene():
     select_button = constants.button_state["button_up"]
 
     # get sound ready
-    pew_sound = open("pew.wav","rb")
+    pew_sound = open("pew.wav", "rb")
     sound = ugame.audio
     sound.stop()
     sound.mute(False)
@@ -44,7 +44,7 @@ def game_scene():
         16,
     )
 
-    # create a stage for the background to show up on 
+    # create a stage for the background to show up on
     #  and set the frame rate to 60 fps
     game = stage.Stage(ugame.display, constants.FPS)
 
