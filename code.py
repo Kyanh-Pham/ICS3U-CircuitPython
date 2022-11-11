@@ -5,9 +5,7 @@
 # This program is the "Space Aliens" program on the PyBadge.
 
 import constants
-
 import stage
-
 import ugame
 
 def menu_scene():
