@@ -8,6 +8,7 @@ import constants
 import stage
 import ugame
 
+
 def menu_scene():
     # This function is the main game game_scene
 
