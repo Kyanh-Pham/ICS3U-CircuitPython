@@ -14,14 +14,18 @@ def menu_scene():
 
     image_bank_background = stage.Bank.from_bmp16("space_aliens_background.bmp")
 
-   # add text objects
+    # add text objects
     text = []
-    text1 = stage.Text(width=29, height=12, font=None, palette=constants.RED_PALETTE, buffer=None)
+    text1 = stage.Text(
+        width=29, height=12, font=None, palette=constants.RED_PALETTE, buffer=None
+    )
     text1.move(20, 10)
     text1.text("MT Game Studios")
     text.append(text1)
 
-    text2 = stage.Text(width=29, height=12, font=None, palette=constants.RED_PALETTE, buffer=None)
+    text2 = stage.Text(
+        width=29, height=12, font=None, palette=constants.RED_PALETTE, buffer=None
+    )
     text2.move(40, 110)
     text2.text("PRESS START")
     text.append(text2)
@@ -45,11 +49,11 @@ def menu_scene():
     while True:
         keys = ugame.buttons.get_pressed()
 
-
         if keys & ugame.K_START != 0:
             game_scene()
 
         game.tick()
+
 
 def game_scene():
     # This function is the main game game_scene
