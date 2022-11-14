@@ -4,18 +4,19 @@
 # Created on: Oct 2022
 # This program is the "Space Aliens" program on the PyBadge.
 
+import random
+import time
+
 import constants
 import stage
 import ugame
-import random
-import time
 
 
 def splash_scene():
     # this function is the splash scene game loop
 
     # get sound ready
-    coin_sound = open("con.wav", 'rb')
+    coin_sound = open("con.wav", "rb")
     sound = ugame.audio
     sound.stop()
     sound.mute(False)
@@ -25,8 +26,9 @@ def splash_scene():
     image_bank_mt_background = stage.Bank.from_bmp16("mt_game_studio.bmp")
 
     # sets the background to image 0 in the bank
-    background = stage.Grid(image_bank_mt_background, constants.SCREEN_X,
-     constants.SCREEN_Y)
+    background = stage.Grid(
+        image_bank_mt_background, constants.SCREEN_X, constants.SCREEN_Y
+        )
 
     # create a stage for the background to show up on
     #  and set the frame rate to 60fps
@@ -67,7 +69,7 @@ def menu_scene():
         image_bank_background, constants.SCREEN_GRID_X, constants.SCREEN_GRID_Y
     )
 
-    # used this program to split the image into tile: 
+    # used this program to split the image into tile:
     #   https://ezgif.com/sprite-cutter/ezgif-5-818cdbcc3f66.png
     background.tile(2, 2, 0)  # blank white
     background.tile(3, 2, 1)
