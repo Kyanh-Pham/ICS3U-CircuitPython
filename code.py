@@ -28,7 +28,7 @@ def splash_scene():
     # sets the background to image 0 in the bank
     background = stage.Grid(
         image_bank_mt_background, constants.SCREEN_X, constants.SCREEN_Y
-        )
+    )
 
     # create a stage for the background to show up on
     #  and set the frame rate to 60fps
