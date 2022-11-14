@@ -46,7 +46,7 @@ def splash_scene():
 def menu_scene():
     # This function is the main game game_scene
 
-    image_bank_background = stage.Bank.from_bmp16("space_aliens_background.bmp")
+    image_bank_background = stage.Bank.from_bmp16("mt_game_studio.bmp")
 
     # add text objects
     text = []
