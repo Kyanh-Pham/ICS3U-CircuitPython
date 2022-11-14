@@ -16,7 +16,7 @@ def splash_scene():
     # this function is the splash scene game loop
 
     # get sound ready
-    coin_sound = open("con.wav", "rb")
+    coin_sound = open("coin.wav", "rb")
     sound = ugame.audio
     sound.stop()
     sound.mute(False)
