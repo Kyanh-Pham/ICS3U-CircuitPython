@@ -228,7 +228,8 @@ for laser_number in range(constants.TOTAL_NUMBER_OF_LASERS):
                     lasers[laser_number].move(
                         constants.OFF_SCREEN_X, constants.OFF_SCREEN_Y
                     )
-                    
+
+
         game.render_sprites(lasers + [ship] + [alien])
         game.tick()
 
