@@ -155,13 +155,13 @@ def game_scene():
     )
 
 
-# create list of lasers for when we shoot
-lasers = []
-for laser_number in range(constants.TOTAL_NUMBER_OF_LASERS):
-    a_single_laser = stage.Sprite(
-        image_bank_sprites, 10, constants.OFF_SCREEN_X, constants.OFF_SCREEN_Y
-    )
-    lasers.append(a_single_laser)
+    # create list of lasers for when we shoot
+    lasers = []
+    for laser_number in range(constants.TOTAL_NUMBER_OF_LASERS):
+        a_single_laser = stage.Sprite(
+            image_bank_sprites, 10, constants.OFF_SCREEN_X, constants.OFF_SCREEN_Y
+        )
+        lasers.append(a_single_laser)
 
     # create a stage for the background to show up on
     #  and set the frame rate to 60 fps
@@ -228,7 +228,6 @@ for laser_number in range(constants.TOTAL_NUMBER_OF_LASERS):
                     lasers[laser_number].move(
                         constants.OFF_SCREEN_X, constants.OFF_SCREEN_Y
                     )
-
 
         game.render_sprites(lasers + [ship] + [alien])
         game.tick()
