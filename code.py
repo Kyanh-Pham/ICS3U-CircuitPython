@@ -321,4 +321,3 @@ def game_scene():
 
 if __name__ == "__main__":
     splash_scene()
-
